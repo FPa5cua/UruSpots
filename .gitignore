@@ -1,0 +1,8 @@
+node_modules/
+fuentes/
+*.scss
+*.json
+*.ai
+*.psd
+*.pdf
+*.docx

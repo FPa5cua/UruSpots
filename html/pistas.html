@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pistas - UruSpots - Encuentra y descubre todas los skateparks del país y obtén gps para saber como llegar!</title>
+        <meta name="description" content="Encuentra la ubicación, dirección, gps de los skateparks uruguayos /de Uruguay, usa filtros 
+        para encontrar el skatepark mejor se adapte a lo que quieras. Deja tu reseña"/>
+        <meta name="keywords" content="Skatepark, pistas, departamento, ciudad, barrio, barandas, escaleras, rampas en plano, cuarters, bowls, gaps"/>
+        <meta name="author" content="Felipe Pascuali">
+        <link rel="stylesheet" href="../css/style_b.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="bod">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom">
+            <div class="container-fluid">
+                <a 
+                    class="navbar-brand w-50" 
+                    href="../index.html">
+                    <img 
+                        src="../Img/UruSpots-Logo.svg" 
+                        width="100%"
+                        height="100%"
+                        alt="UruSpots-Logo"
+                        class="img__nav"
+                        alt="logo">
+                </a>
+                <button 
+                    class="navbar-toggler " 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <img 
+                        src="../Img/hamburger-botton.svg" 
+                        alt="hamb_icon"
+                        width="100%"
+                        height="100%">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pistas.html">Pistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./spots.html">Spots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./concursos.html">Concursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./crews.html">Crews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./us.html">Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="title__box rounded-3">
+            <h1 class="title__main">Pistas</h1>
+
+            <h2 class="title__article m-3">Encuentra tu Park</h2>
+        </div>
+
+        <main class="main">
+            
+            <div 
+                name="search__img__map" 
+                class="conteiner section__box">
+                <div name="row1" class= "row ">
+                   
+                    <div 
+                        name="search__type" 
+                        class="col-md-3 p-3">
+                        <h3 class="title__sub__sect">Por Nombre</h3>
+                        <input 
+                            class="form-control w-75" 
+                            type="text" 
+                            placeholder="El nombre del Park" 
+                            aria-label="default input example">
+                   
+                        <h3 class="title__sub__sect">Por Localidad</h3>
+                        <select 
+                            class="form-select form-select-lg mb-3" 
+                            aria-label=".form-select-lg example">
+                            <option selected>Departamento</option>
+                            <option value="artigas">Artigas</option>
+                            <option value="canelones">Canelones</option>
+                            <option value="c_largo">Cerro Largo</option>
+                            <option value="colonia">Colonia</option>
+                            <option value="durazno">Durazno</option>
+                            <option value="flores">Flores</option>
+                            <option value="florida">Florida</option>
+                            <option value="lavalleja">Lavalleja</option>
+                            <option value="maldonado">Maldonado</option>
+                            <option value="montevideo">Montevideo</option>
+                            <option value="paysandu">Paysandú</option>
+                            <option value="r_negro">Rio Negro</option>
+                            <option value="paysandu">Paysandú</option>
+                            <option value="rivera">Rivera</option>
+                            <option value="rocha">Rocha</option>
+                            <option value="salto">Salto</option>
+                            <option value="s_jose">San Jose</option>
+                            <option value="soriano">Soriano</option>
+                            <option value="tacuarembo">Tacuarembó</option>
+                            <option value="t_tres">Treinta y Trés</option>
+                        </select>
+                            <!--generar correspondencia de ciudades x depto seleccionado-->
+                        <select 
+                            class="form-select form-select-lg mb-3" 
+                            aria-label=".form-select-lg example">
+                            <option selected>Ciudad</option>
+                            <option value="artigas">Artigas</option>
+                            <option value="canelones">Canelones</option>
+                            <option value="c_largo">Melo</option>
+                            <option value="colonia">Colonia del Sacramento</option>
+                            <option value="durazno">Durazno</option>
+                            <option value="flores">Trinidad</option>
+                            <option value="florida">Florida</option>
+                            <option value="lavalleja">Minas</option>
+                            <option value="maldonado">Maldonado</option>
+                            <option value="montevideo">Montevideo</option>
+                            <option value="paysandu">Paysandú</option>
+                            <option value="r_negro">Fray Bentos</option>
+                            <option value="paysandu">Paysandú</option>
+                            <option value="rivera">Rivera</option>
+                            <option value="rocha">Rocha</option>
+                            <option value="salto">Salto</option>
+                            <option value="s_jose">San Jose de Mayo</option>
+                            <option value="soriano">Mercedes</option>
+                            <option value="tacuarembo">Tacuarembó</option>
+                            <option value="t_tres">Treinta y Trés</option>
+                        </select>
+                            <!--generar correspondencia de barrios x ciudad seleccionada-->
+                        <select 
+                            class="form-select form-select-lg mb-3" 
+                            aria-label=".form-select-lg example">
+                            <option selected>Barrio</option>
+                            <option value="lezica">Lezica</option>
+                            <option value="b.sur">Barrio Sur</option>
+                            <option value="cordon">Cordon</option>
+                        </select>
+                   
+                    </div>
+
+                    <div name="search__swithch" class="col-md-2">
+                        <h3 class="title__sub__sect">Caracteristicas</h3>
+                    
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Barandas</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Escaleras</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Rampas en Plano</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Cuarters</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"  checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Bowls</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Gaps</label>
+                        </div>
+                    </div>
+
+                    <div name="search__img" class="col-md-7 consectetur">
+                        <img 
+                            src="../Img/skatepark_cipres.jpg" 
+                            alt="park"
+                            class="img-fluid rounded-pill border border-2 float-end"
+                            id="park_img"
+                            alt="foto del skatepark seleciconado">
+                    </div>    
+                
+                </div>div   
+                             
+                <div class="row">
+                    
+                    <div 
+                        name="search__map" 
+                        class="park__map container-fluid rounded-3 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.501003612524!2d-56.1529824843825!3d-34.843636677739724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02a64d725cbb5%3A0x4d46911b8627916b!2sSkatepark%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2suy!4v1645891666211!5m2!1ses-419!2suy"
+                                    width="90%"
+                                    height="400px"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    class="border border-2 rounded-pill"
+                                    alt="mapa de la pista seleccionada">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div 
+                        name="coment" 
+                        class="container-fluid rounded-3 col-md-6">
+                        <div> 
+                            <h3 class="title__sub__sect">Deja tu Reseña</h3>
+                            
+                            <div class="mb-3 w-100">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3 w-100">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>                    
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+        </main>
+        
+        <footer class="foot rounded-top">
+            <div class="title__foot">
+                <h3><a href="./index.html">Home</a></h3>
+            </div>
+            <div class="title__foot">
+                <h3><a href="https://www.instagram.com" target="_blank">Redes</a></h3>
+            </div>
+        </footer>
+        
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
